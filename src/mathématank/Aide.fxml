@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mathématank.AideController">
+   <children>
+      <ImageView fitHeight="774.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MATHEMATANK%20BACKGROUND.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.04" contrast="-0.04" saturation="-0.19" />
+         </effect>
+      </ImageView>
+      <Button fx:id="Retour_Boutton_Aide" layoutX="359.0" layoutY="723.0" mnemonicParsing="false" onAction="#Retour_Pressed" prefHeight="36.0" prefWidth="120.0" text="Retour">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Text fill="WHITE" layoutX="340.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aide" wrappingWidth="119.99999999999977">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="55.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text layoutX="21.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment jouer?">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="35.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text layoutX="438.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment rajouter des questions?" wrappingWidth="342.317626953125">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="35.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text layoutX="339.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour commencer la partie, vous devez selectionner une des difficultées proposées. Une fois que le jeu est commencer, vous devez obtenir le plus de points possible en répondant aux questions à choix multiple correctement. Si vous faite une erreur ou que le temps est écouler, vous perdez une vie. Si vous n'avez plus de vies, la partie se termine et votre score sera sauvegarder. Esseyer d'avoir le meilleur score." wrappingWidth="439.75811767578125">
+         <font>
+            <Font name="Constantia Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#286613" layoutX="339.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En facile, vous disposez de 5 vies et receverez en bonus des questions classifiées ''facile''." wrappingWidth="429.292236328125">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text fill="#291f99" layoutX="339.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En normal, vous disposez de 4 vies et receverez en bonus des questions classifiées ''normal''." wrappingWidth="439.75811767578125">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text fill="#9e0d0d" layoutX="339.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En vétéran, vous disposez de 3 vies et receverez en bonus des questions classifiées ''vétéran''." wrappingWidth="439.75811767578114">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Text>
+      <Text layoutX="21.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour rajouter des questions, vous devez ouvrir le ficher texte nommé ''QUESTION_JEU''. Une fois le fichier ouvert, il vous suffit de changer le texte des questions, des réponses, le numero du boutons donnant la bonne réponse et le temps alloué pour répondre à cette question. Si vous voulez que la question soit exclusif a certains modes, inscrivez soit ''facile'', ''normal'' ou ''vétéran'' dans la région nommée ''dificulté''. Vous pouvez ajouter autant de questions que vous voulez, il faut juste énoncer le numéro de ces questions. Il faut aussi retirer toute les lignes non utilisées." wrappingWidth="416.74371337890625">
+         <font>
+            <Font name="Constantia Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
